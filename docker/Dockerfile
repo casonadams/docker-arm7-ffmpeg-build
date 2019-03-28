@@ -27,13 +27,13 @@ RUN apt-get update && \
   yasm \
   libx264-dev \
   libx265-dev \
-  libnuma-dev \
   libvpx-dev \
   libfdk-aac-dev \
   libmp3lame-dev \
   libopus-dev 
 
 
-RUN mkdir -p ~/ffmpeg_sources ~/bin
+RUN mkdir /home/ffmpeg_sources 
+RUN mkdir /home/bin
 RUN mkdir /home/Projects
 WORKDIR "/home/Projects"
